@@ -39,7 +39,7 @@ function App() {
             <div>
               <input type="button" value="00" onClick={e => setVal(val + e.target.value)} />
               <input type="button" value="0" onClick={e => setVal(val + e.target.value)} />
-              <input type="button" value="=" className='equal' />
+              <input type="button" value="=" className='equal' onClick={e => setVal(eval(val))} />
             </div>
           </form>
         </div>
